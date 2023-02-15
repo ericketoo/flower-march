@@ -1,0 +1,282 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700;800;900&family=Poppins:wght@200;300;400;500;600;700;800&display=swap');
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito', sans-serif !important;
+    list-style: none;
+    text-decoration: none;
+    font-weight: 900;
+}
+:root{
+    --verde: #3a9842;
+    --dark: #0D0D0D ;
+    --white: #fff;
+    --fundo: #F5F5F5;
+    --verde_claro: #CADDCB;
+}
+header a{
+    color: var(--verde);
+    text-decoration: none;
+}
+header{
+    padding: 10px;
+    display: flex;
+    font-size: 20px;
+}
+header i{
+    font-size: 30px;
+}
+
+/*logo img*/
+.logo_flower{
+    justify-content: center;
+    display: flex;
+    align-items: center;
+
+}
+.logo_flower img{
+    width: 45%;
+    margin-bottom: 10px;
+}
+/*logo img*/
+
+/*Texto_logo*/
+.Texto_logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    flex-wrap: wrap;
+}
+.Texto_logo h1{
+    font-size: 30px;
+    font-weight: 900;
+    margin-bottom: 0px;
+}
+.Texto_logo p{
+    font-weight: 900;
+    font-size: 15px;
+    color: var(--verde_claro);
+    width: 100%;
+    margin: 0px 60px 10px 60px;
+    
+}
+/*Texto_logo*/
+
+/*forms*/
+form{
+    margin: 0px 30px;
+}
+.form-control{
+    border: solid 2px var(--verde_claro);
+    border-radius: 50px;
+    margin: auto ;
+    color: var(--verde_claro);
+    transition: none;
+}
+.form-control:hover{
+    border: solid 2px var(--verde_claro);
+    box-shadow: var(--verde_claro);
+}
+.form-control::placeholder{
+    color: var(--verde_claro);
+    font-size: 15px;
+    font-weight: 700;
+}
+.form-control:focus{
+    border: solid 2px var(--verde_claro);
+    box-shadow: var(--verde_claro);
+    box-shadow: none;
+}
+/*lembrar de mim*/
+.form-check{
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    box-shadow: none;
+}
+.form-check a{
+    text-decoration: none;
+    color: var(--verde_claro);
+    font-size: 15px;
+}
+.form-check-label{
+    color: var(--verde_claro);
+    font-weight: 700;
+    border-color: var(--verde_claro);
+    box-shadow: none;
+}
+.form-check-input{
+    border: solid 2px var(--verde_claro);
+    border-radius: 50px;
+    color: var(--verde_claro);
+    box-shadow: none;
+
+}
+.form-check-input:hover{
+    border: solid 2px var(--verde_claro);
+    box-shadow: var(--verde_claro);
+    box-shadow: none;
+}
+.form-check-input:focus{
+    border: solid 2px var(--verde_claro);
+    box-shadow: var(--verde_claro);
+    box-shadow: none;
+}
+.form-check-input:checked{
+    background-color: var(--verde_claro);
+    border-color: var(--verde_claro);
+    box-shadow: none;
+}
+
+/*lembrar de mim*/
+/*login*/
+
+.btn-primary{
+    border-radius: 50px;
+    background-color: var(--verde);
+    border: none;
+    font-weight: 800;
+    transition: none;
+    --bs-btn-active-bg: var(--verde);
+    --bs-btn-hover-bg: var(--verde);
+    margin: 0px 70px;
+    margin-bottom: 20px;
+}
+/*login*/
+/*forms*/
+
+/*OU*/
+.ou {
+    height: 3px;
+    background-color: var(--verde_claro);
+    text-align: center;
+    margin: 10px 20px;
+  }
+.ou span {
+    background-color: white;
+    position: relative;
+    top: -15px;
+    padding: 0 10px;
+    font-size: 20px;
+    color: var(--verde_claro);
+  }
+/*OU*/
+
+/*Accont*/
+.accont {
+    width: 90%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: auto;
+
+}
+.accont img{
+    margin: 15px 50px;
+    box-shadow: #64646f33 0px 3px 20px 0px;
+    border-radius: 50px;
+    transition: 0.3s;
+    cursor: pointer;
+}  
+/*Accont*/
+
+
+/*Criar conta*/
+.criar_conta{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    font-size: 15px;
+    
+}
+.criar_conta a{
+    text-decoration: none;
+    transition: 0.3s;
+    color: var(--verde);
+}
+#moca img{
+    display: none;
+}
+    /*Criar conta*/
+
+    @media (min-width:660px) {
+        .Texto_logo p{
+            margin: 0px 120px;
+            margin-bottom: 10px;
+        }
+        form{
+            margin: 0px 130px;
+        }
+        .ou{
+            margin: 10px 100px;
+        }
+        .accont img{
+            margin: 15px 155px;
+        }
+        .logo_flower img {
+            width: 40%;
+        }
+    }
+    @media  only screen and (min-width:1024px){
+        .accont img{
+            margin: 15px 220px;
+        }
+        .Texto_logo p{
+            margin: 0px 200px;
+            margin-bottom: 10px;
+        }
+        p, a, label, ::placeholder {
+            font-size: 25px !important;
+        }
+        .logo_flower img {
+            width: 30%;
+        }
+        .form-control {
+            height: 50px;
+            padding: 6px 12px 0px 12px;
+        }
+        .btn-primary{
+            height: 45px;
+        }
+        .form-check{
+            padding-left: 50px;
+        }
+    }
+    @media  only screen and (min-width:1200px){
+        .Texto_logo p{
+            margin: 0px 120px;
+            margin-bottom: 10px;
+        }
+        #lateral{
+            width: 800px;
+        }
+        #moca img{
+            display: flex;
+            width: 30rem;
+        }
+        main{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        body{
+            background-image :  url(../img/pag2/pag_2_fundo.svg);
+            background-repeat: no-repeat;
+            background-size: 70%;
+            background-position: -100px;
+        }
+        .form-control{
+            padding: 6px 12px 0px 12px;
+        }
+        .accont img{
+            margin: 15px 150px;
+        }
+    }

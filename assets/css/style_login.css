@@ -1,0 +1,299 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700;800;900&family=Poppins:wght@200;300;400;500;600;700;800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito', sans-serif !important;
+    list-style: none;
+    text-decoration: none;
+    justify-content: flex-end;
+    font-weight: 900;
+}
+
+:root{
+    --verde: #3a9842;
+    --dark: #0D0D0D ;
+    --white: #fff;
+    --fundo: #F5F5F5;
+    --verde_claro: #CADDCB;
+}
+body{
+    color: var(--dark);
+    
+}
+body{
+    padding: 0;
+    margin: 0;
+    background-image :  url(../img/pag2/pag_2_fundo.svg);
+    background-repeat: no-repeat;
+    background-size: 50%;
+}
+    /*header voltar*/
+header{
+    display: flex;
+    justify-content: space-between;
+    width: 80px;
+    margin-left: 30px;
+    margin-top: 20px;
+}
+header a{
+    font-size: 23px;
+    color: var(--verde);
+    font-family:'Nunito', sans-serif;
+    font-weight: 800;
+}
+header i{
+    font-size: 30px;
+    font-weight: bold;
+    color: var(--verde);
+}
+    /*header voltar*/
+
+    /*espaçamento do main*/
+main{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    width: 1250px;
+    height: 100%;
+    margin: 0px 300px 0px 150px;
+}
+    /*espaçamento do main*/
+
+    /*config img moca*/
+.img_moca img{
+    padding-top: 30px;
+    width: 110%;
+    position: relative;
+}
+.img_logo {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    width: 500px;
+    margin-bottom: 15px;
+
+}
+.logo{
+    display: flex;
+    max-width: 60%;
+}
+    /*config img */
+
+    /*config content*/
+#content{
+    width: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    flex-wrap: wrap;
+
+}
+    /*config content*/
+
+    /*cseja bem vindo*/
+.bem_vindo{
+    flex-wrap: wrap;
+    justify-content: center;
+    display: flex;
+}
+.bem_vindo h1{
+    font-size: 30px;
+    justify-content: center;
+}
+.bem_vindo p{
+    text-align: center;
+    width: 380px;
+    font-size: 18px;
+    color: var(--verde_claro);
+}
+    /*cseja bem vindo*/
+
+    /*input decoration*/
+form{ /*deixar ites centralizado*/
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+    flex-wrap: wrap;
+    width: 500px;
+}
+
+input::placeholder{ /*colocar cor no input*/
+    color: var(--verde_claro);
+}
+input{
+    outline: none;
+    direction: none;
+    border: solid 2px;
+    border-radius: 50px;
+    border-color: var(--verde_claro);
+}
+#email_login input{
+    display: flex;
+    width: 480px;
+    height: 50px;
+    font-size: 20px;
+    padding-left:20px;
+}
+#email_login{
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    padding: 10px 0px;
+    width: 450px;
+}
+#email_login i{
+    font-size: 30px;
+    color: var(--verde_claro);
+    right: 55px;
+    position: relative;
+}
+    /*input decoration*/
+
+    /*lembrar de mim*/
+.lembrar{
+    margin: auto;
+    width: 420px;
+    justify-content: space-between;
+    align-items: center;
+    text-align: justify;
+    display: flex;
+    color: var(--verde_claro);
+    font-size: 18px;
+}
+.lembrar p{
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    display: flex;
+}
+.lembrar_login{
+    padding: 8px;
+    border: solid 2px;
+    border-color: var(--verde_claro);
+    border-radius: 4px;
+    font-size: 0;
+    margin-right: 3px;
+    cursor: pointer;
+}
+.lembrar_login:hover{
+    background-color: #3a9842;
+}
+    /*lembrar de mim*/
+
+    /*LOGIN*/
+.login_enviar input{
+    width: 330px;
+    height: 50px;
+    font-size: 20px;
+    background-color: var(--verde);
+    color: var(--white);
+    transition: 0.3s;
+    cursor: pointer;
+}
+.login_enviar{
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    padding: 15px 0px;
+
+}
+.login_enviar input:hover{
+    width: 350px;
+    height: 53px;
+    font-size: 20px;
+    background-color: var(--verde);
+    color: var(--white)
+
+}
+    /*LOGIN*/
+
+    /*OU*/
+fieldset{ /*propriedade para fazer linha no texto*/
+    text-align: center;
+    border: none;
+    border-top: 2px solid var(--verde_claro);
+    color: var(--verde_claro);
+    width: 400px;
+    justify-content: center;
+    margin: auto;
+}
+fieldset legend{ /*espacamento da linha*/
+    padding: 0px 10px;
+}
+    /*OU*/
+
+    /*Accont*/
+.accont {
+    width: 500px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+.accont img{
+    width:60%;
+    margin-bottom: 20px;
+    box-shadow: #64646f33 0px 3px 20px 0px;
+    border-radius: 50px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+.accont img:hover{
+    width: 65%;
+    
+}
+    /*Accont*/
+
+    /*Criar conta*/
+.criar_conta{
+    width: 500px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    font-size: 16px;
+
+}
+.criar_conta a:hover{
+    font-size: 18px;
+}
+.criar_conta a{
+    transition: 0.3s;
+    color: var(--verde);
+}
+    /*Criar conta*/
+
+@media only screen and (max-width: 1420px){
+    main{
+        width: 1000px;
+    }
+    .img_moca img{
+        padding-top: 30px;
+        width: 100%;
+    }
+}
+@media only screen and (max-width: 1265px){
+    body{
+        background-image: none;
+    } 
+    .img_moca img{
+
+        display: flex;
+
+    }
+    #content{
+        width: 50%;
+    }
+}
+@media screen and (max-width: 700px){
+    .img_moca img{
+        display: none;
+    }
+}
